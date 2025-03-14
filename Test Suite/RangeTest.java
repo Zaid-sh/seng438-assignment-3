@@ -284,12 +284,12 @@ public class RangeTest {
     
     @Test
     public void minNan() {
-    	assertEquals("min should return 7", 7, Math.min(7, Double.NaN), 0.00000001d);
+    	assertEquals("min should return 7", 7, Range.min(7, Double.NaN), 0.00000001d);
     }
     
     @Test
     public void maxNan() {
-    	assertEquals("max should return 7", 7, Math.max(7, Double.NaN), 0.00000001d);
+    	assertEquals("max should return 7", 7, Range.max(7, Double.NaN), 0.00000001d);
     }
     
     @Test
